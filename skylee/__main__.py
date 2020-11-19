@@ -32,7 +32,7 @@ from skylee.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hey There ! My name is 𝙈𝙚𝙞𝙠𝙤 
+Hey There ! My name is Mio Natsume 
 I'm here to make your group management fun and easy!
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
 Please Click Help Button For Assistance And Help Regarding Special Modules
@@ -48,7 +48,7 @@ Wanna Add me to your Group? Just click the button below!
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add Me To Group ➕", url="t.me/meikobot?startgroup=true"
+            text="Add Me To Group ➕", url="http://t.me/NatsumeMio_Bot?startgroup=true"
         ),
         InlineKeyboardButton(text="Updates & Info 📃", url="https://t.me/meikosupport"),
     ]
@@ -168,7 +168,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://telegra.ph/file/0a6a55b868d5e7d874295.jpg",
+                "https://telegra.ph/file/ce454358a4865d07935bb.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
